@@ -10,14 +10,14 @@ import android.support.v7.widget.RecyclerView;
 import java.util.ArrayList;
 import java.util.List;
 
-public class MainActivity5 extends AppCompatActivity {
+public class MainActivity6 extends AppCompatActivity {
     private SimpleAdapter mAdapter;
     private List<String> mDatas;
     RecyclerView rvToDoList;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main5);
+        setContentView(R.layout.activity_main6);
         CollapsingToolbarLayout collapsingToolbar = (CollapsingToolbarLayout) findViewById(R.id.maincollapsing);
         collapsingToolbar.setTitle("Title");
         rvToDoList= (RecyclerView) findViewById(R.id.rvToDoList);
@@ -28,7 +28,7 @@ public class MainActivity5 extends AppCompatActivity {
         for(int i='A';i<='z';i++){
             mDatas.add(""+(char)i);
         }
-        mAdapter=new SimpleAdapter(MainActivity5.this,mDatas);
+        mAdapter=new SimpleAdapter(MainActivity6.this,mDatas);
         rvToDoList.setAdapter(mAdapter);
         //设置布局管理
         LinearLayoutManager linearLayoutManager=new LinearLayoutManager(this,LinearLayoutManager.VERTICAL,false);

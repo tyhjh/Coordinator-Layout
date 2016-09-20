@@ -58,7 +58,7 @@
         android:layout_gravity="end|bottom"
         android:layout_height="wrap_content"
         android:layout_width="wrap_content"
-        app:layout_behavior="com.example.tyhj.pull.ScrollAwareFABBehavior"
+        app:layout_behavior="com.example.tyhj.pull.ScrollAwareFABBehavior2"
         android:layout_margin="@dimen/activity_horizontal_margin"
         android:src="@android:drawable/ic_dialog_email"
         />

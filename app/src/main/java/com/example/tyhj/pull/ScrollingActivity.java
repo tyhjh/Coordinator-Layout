@@ -13,7 +13,7 @@ import android.view.MenuItem;
 import android.widget.Button;
 
 public class ScrollingActivity extends Activity implements View.OnClickListener{
-    Button btn1,btn2,btn3,btn4,btn5;
+    Button btn1,btn2,btn3,btn4,btn5,btn6;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,6 +28,8 @@ public class ScrollingActivity extends Activity implements View.OnClickListener{
         btn4.setOnClickListener(this);
         btn5= (Button) findViewById(R.id.btn5);
         btn5.setOnClickListener(this);
+        btn6= (Button) findViewById(R.id.btn6);
+        btn6.setOnClickListener(this);
     }
 
     @Override
@@ -47,6 +49,9 @@ public class ScrollingActivity extends Activity implements View.OnClickListener{
                 break;
             case R.id.btn5:
                 startActivity(new Intent(ScrollingActivity.this,MainActivity5.class));
+                break;
+            case R.id.btn6:
+                startActivity(new Intent(ScrollingActivity.this,MainActivity6.class));
                 break;
         }
     }
